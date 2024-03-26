@@ -10,7 +10,7 @@ type Pokemon = {
 
 const url = "https://pokeapi.co/api/v2/pokemon?limit=6&offset=20";
 
-export default function LastSalesPage({
+export default function PokemonsPage({
   pokemons,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const [clientPokemons, setClientPokemons] = useState<Pokemon[]>(pokemons);
